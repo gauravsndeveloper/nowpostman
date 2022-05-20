@@ -2,7 +2,9 @@
     <element label="APIRequest" max_length="40" name="x_15500_nowpostman_apirequest" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Authorization" max_length="40" name="authorization" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Body Type" max_length="40" name="body_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Format" max_length="40" name="format" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Method" max_length="40" name="method" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Response Body" max_length="4000" name="response_body" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="URL" max_length="1024" name="url" type="url"/>
     </element>
 </database>

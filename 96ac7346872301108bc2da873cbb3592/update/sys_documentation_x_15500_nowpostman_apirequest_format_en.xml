@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="format" label="Format" language="en" table="x_15500_nowpostman_apirequest">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>format</element>
+            <help/>
+            <hint/>
+            <label>Format</label>
+            <language>en</language>
+            <name>x_15500_nowpostman_apirequest</name>
+            <plural>Formats</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-20 20:34:01</sys_created_on>
+            <sys_id>4b6314da876301108bc2da873cbb352e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Format</sys_name>
+            <sys_package display_value="NowPostMan" source="x_15500_nowpostman">96ac7346872301108bc2da873cbb3592</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NowPostMan">96ac7346872301108bc2da873cbb3592</sys_scope>
+            <sys_update_name>sys_documentation_x_15500_nowpostman_apirequest_format_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-20 20:34:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

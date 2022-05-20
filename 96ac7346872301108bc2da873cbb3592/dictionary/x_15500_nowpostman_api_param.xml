@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="API Param" max_length="40" name="x_15500_nowpostman_api_param" type="collection">
+        <element attributes="encode_utf8=false" label="APIRequest" max_length="32" name="apirequest" reference="x_15500_nowpostman_apirequest" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Key" max_length="40" name="key" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Value" max_length="40" name="value" type="string"/>
+        <index name="index">
+            <element name="apirequest"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_15500_nowpostman.restAPICall</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>restAPICall</name>
+        <script><![CDATA[var restAPICall = Class.create();
+restAPICall.prototype = {
+    initialize: function() {},
+
+    initiateCallGET: function(apiurl, authType, uName, pWord, restRequest,str) {
+        try {
+
+            var request = new sn_ws.RESTMessageV2();
+            request.setHttpMethod('get');
+
+            //endpoint - ServiceNow REST Attachment API        
+            request.setEndpoint(apiurl);
+            var grHeader = new GlideRecord('x_15500_nowpostman_api_header');
+            grHeader.addQuery('api_request', restRequest);
+            grHeader.query();
+            while (grHeader.next()) {
+                request.setRequestHeader(grHeader.key, grHeader.value);
+            }
+            var grParam = new GlideRecord('x_15500_nowpostman_api_param');
+            grParam.addQuery('apirequest', restRequest);
+            grParam.query();
+            while (grParam.next()) {
+                request.setQueryParameter(grParam.key, grParam.value);
+            }
+
+            if (authType == 'basic') {
+                //                 var encr = new GlideEncrypter();
+                var basicPassword = pWord;
+                var decrString = basicPassword.getDecryptedValue();
+                request.setBasicAuth(uName, decrString);
+            }
+            //RESTMessageV2 - saveResponseBodyAsAttachment(String tableName, String recordSysId, String fileName)        
+            //request.saveResponseBodyAsAttachment(tablename, recordSysId, filename);
+
+            response = request.execute();
+            var httpResponseStatus = response.getStatusCode();
+            var resposeBody = response.getBody();
+            var obj = {};
+            obj.status = httpResponseStatus;
+            obj.body = resposeBody;
+            //var parser = new global.JSON().encode(obj);
+			str = new global.JSON().encode(obj);
+			//str = JSON.stringify(parser);
+			gs.info(" http response status_code:  " + str);
+            return str;
+            
+
+        } catch (ex) {
+            var message = ex.getMessage();
+            gs.info(message);
+        }
+    },
+
+
+    type: 'restAPICall'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-20 21:37:00</sys_created_on>
+        <sys_id>fa18501287a301108bc2da873cbb3587</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>restAPICall</sys_name>
+        <sys_package display_value="NowPostMan" source="x_15500_nowpostman">96ac7346872301108bc2da873cbb3592</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NowPostMan">96ac7346872301108bc2da873cbb3592</sys_scope>
+        <sys_update_name>sys_script_include_fa18501287a301108bc2da873cbb3587</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-20 23:37:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

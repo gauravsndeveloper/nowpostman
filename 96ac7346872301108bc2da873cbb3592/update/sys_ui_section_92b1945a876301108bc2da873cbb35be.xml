@@ -4,27 +4,41 @@
             <element>body_type</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-05-20 20:26:36</sys_created_on>
-            <sys_id>dab1d45a876301108bc2da873cbb354c</sys_id>
+            <sys_created_on>2022-05-20 20:43:32</sys_created_on>
+            <sys_id>2695585e876301108bc2da873cbb355d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Content" display_value="Content" name="x_15500_nowpostman_apirequest" sys_domain="global" view="Default view">92b1945a876301108bc2da873cbb35be</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-05-20 20:26:36</sys_updated_on>
+            <sys_updated_on>2022-05-20 20:43:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_body</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-05-20 20:43:32</sys_created_on>
+            <sys_id>a695585e876301108bc2da873cbb355d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Content" display_value="Content" name="x_15500_nowpostman_apirequest" sys_domain="global" view="Default view">92b1945a876301108bc2da873cbb35be</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-05-20 20:43:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-05-20 20:26:36</sys_created_on>
-            <sys_id>5eb1d45a876301108bc2da873cbb354c</sys_id>
+            <sys_created_on>2022-05-20 20:43:32</sys_created_on>
+            <sys_id>2a95585e876301108bc2da873cbb355d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Content" display_value="Content" name="x_15500_nowpostman_apirequest" sys_domain="global" view="Default view">92b1945a876301108bc2da873cbb35be</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-05-20 20:26:36</sys_updated_on>
+            <sys_updated_on>2022-05-20 20:43:32</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>

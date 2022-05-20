@@ -10,7 +10,7 @@
         <new_condition/>
         <new_roles/>
         <omit_columns_if_empty>false</omit_columns_if_empty>
-        <omit_if_empty>true</omit_if_empty>
+        <omit_if_empty>false</omit_if_empty>
         <omit_links>false</omit_links>
         <related_list>x_15500_nowpostman_api_header.api_request</related_list>
         <sys_class_name>sys_ui_list_control_embedded</sys_class_name>
@@ -19,7 +19,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aed418da876301108bc2da873cbb357d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_15500_nowpostman_apirequest</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="NowPostMan" source="x_15500_nowpostman">96ac7346872301108bc2da873cbb3592</sys_package>
@@ -27,6 +27,6 @@
         <sys_scope display_value="NowPostMan">96ac7346872301108bc2da873cbb3592</sys_scope>
         <sys_update_name>sys_ui_list_control_embedded_aed418da876301108bc2da873cbb357d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-05-20 20:40:47</sys_updated_on>
+        <sys_updated_on>2022-05-20 23:40:13</sys_updated_on>
     </sys_ui_list_control_embedded>
 </record_update>

@@ -3,9 +3,11 @@
         <element attributes="edge_encryption_enabled=true" label="Authorization" max_length="40" name="authorization" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Body Type" max_length="40" name="body_type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Format" max_length="40" name="format" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Logs" max_length="4000" name="logs" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Method" max_length="40" name="method" type="string"/>
         <element attributes="edge_encryption_enabled=true,no_data_replicate=true" label="Password" max_length="255" name="password" type="password2"/>
         <element attributes="edge_encryption_enabled=true" label="Request Body" max_length="4000" name="request_body" type="string"/>
+        <element display="true" label="Request Name" max_length="40" name="request_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Response Body" max_length="4000" name="response_body" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Size" max_length="40" name="size" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
